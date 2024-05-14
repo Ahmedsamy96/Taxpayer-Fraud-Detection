@@ -41,14 +41,14 @@ Saves the trained model as trained_model.pkl for later use in the web app.
 ## Getting Started
 ### Prerequisites:
 
-Python 3.x
-Jupyter Notebook
-Streamlit
-pandas
-matplotlib
-seaborn
-scikit-learn
-pickle
+- Python 3.x
+- Jupyter Notebook
+- Streamlit
+- pandas
+- matplotlib
+- seaborn
+- scikit-learn
+- pickle
 
 ### Instructions:
 - Clone this repository.
