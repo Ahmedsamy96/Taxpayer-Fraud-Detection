@@ -8,21 +8,14 @@ import seaborn as sns
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 
-#model_path = "https://github.com/Ahmedsamy96/Taxpayer-Fraud-Detection/blob/main/trained_model.pkl"
-def load_original_data():
-    url = 'https://raw.githubusercontent.com/Ahmedsamy96/Taxpayer-Fraud-Detection/main/trained_model.pkl'
-    response = requests.get(url)
-    if response.status_code == 200:
-        return pd.read_csv(StringIO(response.text))
-    else:
-        st.error("Failed to load data from GitHub.")
-        return None
-model_path = load_original_data()
-
-# Load the trained model
 model = RandomForestClassifier(n_estimators=100, random_state=42)
-#with open(model_path, 'rb') as file:
-model = pickle.load(model_path)
+#model_path = "https://github.com/Ahmedsamy96/Taxpayer-Fraud-Detection/blob/main/trained_model.pkl"
+# Load the trained model from GitHub
+model_url = "https://github.com/Ahmedsamy96/Taxpayer-Fraud-Detection/raw/main/trained_model.pkl"
+model_response = requests.get(model_url)
+model_response.raise_for_status()  # Check if download was successful
+model = pickle.loads(model_response.content)
+
 
 # Define a function to preprocess the input data
 def preprocess_data(df):
