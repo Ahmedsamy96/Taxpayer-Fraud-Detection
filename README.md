@@ -1,5 +1,5 @@
 # **Tax Fraud Detection System**
-![alt text](https://github.com/Ahmedsamy96/Taxpayer-Fraud-Detection/blob/main/fraud.png)
+![alt text](https://github.com/Ahmedsamy96/Taxpayer-Fraud-Detection/blob/main/fraud.jpeg)
 
 <p>This repository contains a system for detecting potential tax fraud in financial data.</p>
 
