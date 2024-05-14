@@ -50,7 +50,7 @@ Saves the trained model as trained_model.pkl for later use in the web app.
 - scikit-learn
 - pickle
 
-### Instructions:
+### Instructions to deploy the app:
 - Clone this repository.
 - Install the required libraries using pip install -r requirements.txt (assuming you have a requirements.txt file listing the dependencies).
 - For data pipeline:
@@ -58,6 +58,11 @@ Saves the trained model as trained_model.pkl for later use in the web app.
 - For web app:
   - Run streamlit run app.py from the command line in the project directory.
   - This will launch the Streamlit app in your web browser, allowing you to upload a CSV file and view predictions.
+
+### Instructions to Use the app:   (Application use)
+- Go to the application link : ( https://taxpayer-fraud-detection.streamlit.app/ )
+- From the github download and upload the file ( Test_Dataset.csv ) - Just for testing
+- Enjoy with the output ✨🍿
 
 ## Additional Notes:
 - You can replace the simulated data generation in the Jupyter notebook with your actual financial data for training the model.
