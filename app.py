@@ -6,7 +6,7 @@ import seaborn as sns
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 
-model_path = "trained_model.pkl"
+model_path = "https://github.com/Ahmedsamy96/Taxpayer-Fraud-Detection/blob/main/trained_model.pkl"
 
 # Load the trained model
 model = RandomForestClassifier(n_estimators=100, random_state=42)
