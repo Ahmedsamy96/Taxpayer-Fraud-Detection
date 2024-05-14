@@ -21,8 +21,8 @@ model_path = load_original_data()
 
 # Load the trained model
 model = RandomForestClassifier(n_estimators=100, random_state=42)
-with open(model_path, 'rb') as file:
-    model = pickle.load(file)
+#with open(model_path, 'rb') as file:
+model = pickle.load(model_path)
 
 # Define a function to preprocess the input data
 def preprocess_data(df):
